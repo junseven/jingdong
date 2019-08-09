@@ -7,7 +7,7 @@ import store from '../store';
     //请求拦截
     config =>{
       if(store.state.token){
-        config.header.token = store.state.token
+        config.headers.token = store.state.token
       }
       return config
     }
